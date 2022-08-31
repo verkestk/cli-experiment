@@ -1,7 +1,7 @@
 # cli-experiment
 
 ## Usage
-> This cli template shows the date and time in the terminal
+> This cli template does nothing useful.
 
 cli-experiment
 
@@ -9,15 +9,12 @@ cli-experiment
 
 ```
 This is a template CLI application, which can be used as a boilerplate for awesome CLI tools written in Go.
-This template prints the date or time to the terminal.
+This template currently does nothing useful.
 ```
 ## Examples
 
 ```bash
-cli-template date
-cli-template date --format 20060102
-cli-template time
-cli-template time --live
+cli-template example
 ```
 
 ## Flags
@@ -31,9 +28,8 @@ cli-template time --live
 |Command|Usage|
 |-------|-----|
 |`cli-experiment completion`|Generate the autocompletion script for the specified shell|
-|`cli-experiment date`|Prints the current date.|
+|`cli-experiment example`|Does nothing useful.|
 |`cli-experiment help`|Help about any command|
-|`cli-experiment time`|Prints the current time|
 # ... completion
 `cli-experiment completion`
 
@@ -186,13 +182,13 @@ You will need to start a new shell for this setup to take effect.
 |Flag|Usage|
 |----|-----|
 |`--no-descriptions`|disable completion descriptions|
-# ... date
-`cli-experiment date`
+# ... example
+`cli-experiment example`
 
 ## Usage
-> Prints the current date.
+> Does nothing useful.
 
-cli-experiment date
+cli-experiment example
 
 ## Flags
 |Flag|Usage|
@@ -212,24 +208,6 @@ cli-experiment help [command]
 Help provides help for any command in the application.
 Simply type cli-experiment help [path to command] for full details.
 ```
-# ... time
-`cli-experiment time`
-
-## Usage
-> Prints the current time
-
-cli-experiment time
-
-## Description
-
-```
-You can print a live clock with the '--live' flag!
-```
-
-## Flags
-|Flag|Usage|
-|----|-----|
-|`-l, --live`|live output|
 
 
 ---
