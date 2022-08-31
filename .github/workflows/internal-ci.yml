@@ -13,7 +13,7 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v2
         with:
-          go-version: 1.16
+          go-version: 1.19
       - name: Run PTerm-CI
         run: |
           go get
@@ -29,4 +29,4 @@ jobs:
           git commit -am "docs: update docs with PTerm-CI" || exit 0
           git push || exit 0
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
