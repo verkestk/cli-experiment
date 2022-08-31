@@ -15,7 +15,7 @@ var rootCmd = &cobra.Command{
 	Long: `This is a template CLI application, which can be used as a boilerplate for awesome CLI tools written in Go.
 This template currently does nothing useful.`,
 	Example: `cli-template example`,
-	Version: "v0.0.2", // <---VERSION---> Updating this version, will also create a new GitHub release.
+	Version: "v0.0.1", // <---VERSION---> Updating this version, will also create a new GitHub release.
 	// Uncomment the following lines if your bare application has an action associated with it:
 	// RunE: func(cmd *cobra.Command, args []string) error {
 	// 	// Your code here
