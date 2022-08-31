@@ -29,4 +29,4 @@ jobs:
           git commit -am "docs: update docs with PTerm-CI" || exit 0
           git push || exit 0
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
