@@ -1,4 +1,4 @@
-module github.com/pterm/cli-template
+module github.com/verkestk/cli-experiment
 
 go 1.16
 
