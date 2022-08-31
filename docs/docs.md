@@ -81,7 +81,7 @@ To load completions for every new session, execute once:
 
 #### macOS:
 
-	cli-experiment completion bash > /usr/local/etc/bash_completion.d/cli-experiment
+	cli-experiment completion bash > $(brew --prefix)/etc/bash_completion.d/cli-experiment
 
 You will need to start a new shell for this setup to take effect.
 
@@ -164,6 +164,10 @@ to enable it.  You can execute the following once:
 
 	echo "autoload -U compinit; compinit" >> ~/.zshrc
 
+To load completions in your current shell session:
+
+	source <(cli-experiment completion zsh); compdef _cli-experiment cli-experiment
+
 To load completions for every new session, execute once:
 
 #### Linux:
@@ -172,7 +176,7 @@ To load completions for every new session, execute once:
 
 #### macOS:
 
-	cli-experiment completion zsh > /usr/local/share/zsh/site-functions/_cli-experiment
+	cli-experiment completion zsh > $(brew --prefix)/share/zsh/site-functions/_cli-experiment
 
 You will need to start a new shell for this setup to take effect.
 
