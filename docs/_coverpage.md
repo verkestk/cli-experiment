@@ -1,4 +1,4 @@
-# cli-template
+# cli-experiment
 
 > This cli template shows the date and time in the terminal
 
